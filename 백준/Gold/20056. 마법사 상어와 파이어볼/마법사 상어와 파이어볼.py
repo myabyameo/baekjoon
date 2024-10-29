@@ -22,8 +22,6 @@ for _ in range(c):
             field[i[0]][i[1]][-2]+=1
             field[i[0]][i[1]][-1].append(i[4])
     li2=[]
-    '''for i in field:
-        print(*i)'''
     for i in field:
         for j in i:
             if j[-2]==1:
@@ -37,6 +35,4 @@ for _ in range(c):
                     else:
                         li2.append([j[0],j[1],j[2]//5,j[3]//j[-2],k*2+1])
     li=li2
-    '''print(li)
-    print()'''
 print(sum(i[2] for i in li))
