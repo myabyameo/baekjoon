@@ -1,5 +1,4 @@
-n=int(input())
-li=list(map(int,input().split()))
+n,*li=map(int,open(0).read().split())
 t=[1]*n
 t2=[1]*n
 for i in range(1,n):
