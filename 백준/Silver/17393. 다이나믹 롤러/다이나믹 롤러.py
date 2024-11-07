@@ -8,13 +8,11 @@ for j in range(n):
     i=li[j]
     low=j+1
     high=n-1
-    res=j
     while low<=high:
         mid=(low+high)//2
         if t[mid]<=i:
             low=mid+1
-            res=mid
         else:
             high=mid-1
-    ans[j]=res-j
+    ans[j]=high-j
 print(*ans)
