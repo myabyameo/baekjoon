@@ -1,4 +1,6 @@
+import sys
 from collections import deque
+input=sys.stdin.readline
 def bfs(a,b,field):
     dx=[1,-1,0,0]
     dy=[0,0,1,-1]
@@ -22,7 +24,7 @@ li=[0]*n
 check=[[False for _ in range(n)] for _ in range(n)]
 icecream=deque()
 for i in range(n):
-    li[i]=list(input())
+    li[i]=list(input().strip())
     for j in range(n):
         if li[i][j]=='#':
             icecream.append((i,j))
